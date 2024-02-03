@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTitan Robotics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TechTitan Robotics</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="libro-de-ingenieria.html">Libro de ingeniería</a></li>
+            <li><a href="#">Proyecto de investigación</a></li>
+        </ul>
+    </nav>
+
+    <section class="slider-container">
+        <div class="slider">
+            <div class="slide" onmouseover="showText('Matias')" onmouseout="hideText()"><img src="C:\Users\Usuario\Desktop\Todo\Robotica\imagenes\Matias.jpg" alt="Imagen 1"></div>
+            <div class="slide" onmouseover="showText('Pipe')" onmouseout="hideText()"><img src="C:\Users\Usuario\Desktop\Todo\Robotica\imagenes\Pipe.jpg" alt="Imagen 2"></div>
+            <div class="slide" onmouseover="showText('YO')" onmouseout="hideText()"><img src="C:\Users\Usuario\Desktop\Todo\Robotica\imagenes\Yo.jpg" alt="Imagen 3"></div>
+            <div class="slide" onmouseover="showText('Santi')" onmouseout="hideText()"><img src="C:\Users\Usuario\Desktop\Todo\Robotica\imagenes\Santi.jpg" alt="Imagen 3"></div>
+            <!-- Agrega más slides según sea necesario -->
+        </div>
+        <div class="arrow arrow-left" onclick="prevSlide()">&#9664;</div>
+        <div class="arrow arrow-right" onclick="nextSlide()">&#9654;</div>
+        <div id="image-text"></div>
+    </section>
+
+    <section>
+        <h2>Team</h2>
+        <p>Somos un equipo que participo en el regional y nacional del año 2022, ganamos el premio de mejor diseño y programación de un robot, estamos nominados a el excellent, tenemos un proyecto de coheteria llamado (como se vaya a llamar)</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TechTitan Robotics.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
